@@ -1,28 +1,625 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Enzo Site</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Enzo</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carnevale Lab</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+    margin: 10px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Carnevale Lab</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Calendar">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+        <!--<div class="intro-text">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Want to know more?</a>
+          </div> -->
+    </div>
+  </header>
+
+
+  <!-- about -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Who are we?</h2>
+          <h3 class="section-subheading text-muted">The Bioinformatics Studio is an inclusive and hands-on environment for learning, training, sharing, and most importantly DOING bioinformatics at Temple University. Come join us and see what it’s about!</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class = 'col-md-3'></div>
+        <div class="col-md-6">
+          <a href = "https://templebioinfo-del5037.slack.com/signup">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <h4 class="service-heading">Community</h4>
+          <p class="text-muted">Our Bioinformatics Studio is an inclusive environment for bioinformatics at Temple University. Whether you’ve never coded before or you’re a coding whiz, we’ll help you jump into the mix!</p>
+          <a class="btn btn-primary btn-md text-uppercase" href="https://templebioinfo-del5037.slack.com/signup">Slack</a>
+        </div>
+      </div>
+      <div class = "row text-center">
+        <div class="col-md-6">
+          <a href = "https://drive.google.com/drive/u/1/folders/0AB9vccD6QEfPUk9PVA">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <h4 class="service-heading">Training</h4>
+          <p class="text-muted">Guided hands-on bioinformatics training at every level of expertise in an open studio format. Learn bioinformatics coding and tools by doing it yourself. We’ll meet you where you’re at and get you started in no time!
+            </p>
+        </div>
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-file-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Dojo</h4>
+          <p class="text-muted">Programming interview preparation and drills. Build out your Git portfolio with collaborative bioinformatics projects. Take your programming skills to the next level!</p>
+        </div>
+      </div>
+      <div class = "row text-center">
+        <div class = 'col-md-3'></div>
+        <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Visiting Speakers</h4>
+            <p class="text-muted">Hear and discuss bleeding-edge science with invited speakers from industry and academia. </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+
+  <section class="page-section" id="Calendar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a href = cal.html>
+            <h2 class="section-heading text-uppercase">Calendar</h2>
+          </a>
+          <h3 class="section-subheading text-muted">Schedule of events for the Fall 2019 semester</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+            <table style='float: left;'>
+                <tr>
+                  <th>Date</th>
+                  <th>Speaker/Tutorial</th> 
+                  <th>Time</th>
+                </tr>
+                <tr>
+                  <td>8/28/19</td>
+                  <td>Welcome Session! Pizza will be supplied! </td> 
+                  <td>5-6PM</td>
+                </tr>
+                <tr>
+                  <td>9/4/19</td>
+                  <td> Github Tutorial </td>
+                  <td>5-6PM</td>
+                </tr>
+                <tr>
+                    <td>9/13/19</td>
+                    <td> Open Coding Session </td>
+                    <td>5-6PM</td>
+                </tr>
+                <tr>
+                    <td>9/20/19</td>
+                    <td>Open Coding Session</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>9/27/19</td>
+                    <td>Open Coding Session </td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>10/4/19</td>
+                    <td>Open Coding Session </td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>10/11/19</td>
+                    <td>Sentieon on Precision Medicine Variant Calling</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>10/18/19</td>
+                    <td>Dr. William La Cava, Penn IBI</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>10/25/19</td>
+                    <td>Open Coding Session</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>11/1/19</td>
+                    <td>Happy Halloween!</td>
+                    <td>5-6PM</td>
+                </tr>
+                <tr>
+                    <td>11/8/19</td>
+                    <td>Open Coding Session</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>11/15/19</td>
+                    <td>Open Coding Session</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>11/22/19</td>
+                    <td>Open Coding Session</td>
+                    <td>5-7PM</td>
+                </tr>
+                <tr>
+                    <td>11/29/19</td>
+                    <td>No session!  Happy Thanksgiving!</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12/6/19</td>
+                    <td>Last Session! Pizza will be supplied!</td>
+                    <td>5-6PM</td>
+                </tr>
+            </table>
+            <table style = 'float: left;'>
+              <tr>
+                <th>Available Tutorials</th>
+              </tr>
+              <tr>
+                <td>Studio Bootstrap</td>
+              </tr>
+              <tr>
+                <td>Intro to Python: Variable Types</td>
+              </tr>
+              <tr>
+                <td>Intro to Python: Loops & Conditional Statements</td>
+              </tr>
+              <tr>
+                <td>PANDAS Introduction</td>
+              </tr>
+              <tr>
+                <td>Graphing: Matplotlib and Seaborn</td>
+              </tr>
+              <tr>
+                <td>Intro to Python: Variable Types</td>
+              </tr>
+              <tr>
+                <td>Input/Output</td>
+              </tr>
+              <tr>
+                <td>Introduction to Functions</td>
+              </tr>
+              <tr>
+                <td>Introduction to Libraries</td>
+              </tr>
+            </table>
+            <a class="btn btn-primary btn-lg text-uppercase" href="https://drive.google.com/drive/u/1/folders/0AB9vccD6QEfPUk9PVA">Google Drive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light page-sfection" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Officers</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/fm.jpg" alt="">
+            <h4>Francisco McGee</h4>
+            <p class="text-muted">Dojo Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/alagauche">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/francisco-mcgee/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/jz.jpeg" alt="">
+            <h4>Jordan Zehr</h4>
+            <p class="text-muted">Project Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/jzehr">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/jordan-zehr-690a8718a/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/ap.jpg" alt="">
+            <h4>Alyssa Pivirotto</h4>
+            <p class="text-muted">Training Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/ampivirotto">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/alyssa-pivirotto-916367113/">
+                  <i class="fab fa-linkedin-in"> </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/al.jpg" alt="">
+            <h4>Alexander Lucaci</h4>
+            <p class="text-muted">Business Affairs Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/aglucaci">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/alexander-lucaci-0b305743/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/wk.png" alt="">
+            <h4>Westin Kosater</h4>
+            <p class="text-muted">Social Media Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/wes-kosater">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/westin-kosater-290600104/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/ak.jpg" alt="">
+            <h4>Adam Karami</h4>
+            <p class="text-muted">Outreach Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/adam-karami-69167195/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/hk.png" alt="">
+            <h4>Hannah Kim</h4>
+            <p class="text-muted">Webmaster</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/hannahkimincompbio/">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/hannahkimincompbio/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/nm.JPG" alt="">
+            <h4>Noreen McBrearty</h4>
+            <p class="text-muted">Event Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/noreen-mcbrearty/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/gn.jpeg" alt="">
+            <h4>Gavin Newcomer</h4>
+            <p class="text-muted">University Relations Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/gavinnewcomer/">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/gavinnewcomer/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Faculty Advisors</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/rk.jpg" alt="">
+            <h4>Rob Kulathinal</h4>
+            <p class="text-muted">robkulathinal AT temple.edu</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.cst.temple.edu/~robie/bioinform/index.html">
+                  <i class="fab fa-hubspot"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/rob-kulathinal-9882083/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/vc.jpg" alt="">
+            <h4>Vincenzo Carnevale</h4>
+            <p class="text-muted">vincenzo.carnevale AT temple.edu</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://vincenzocarnevale.wordpress.com/">
+                  <i class="fab fa-hubspot"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/vincenzocarnevale/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Twitter -->
+  <section class="page-section">
+    <div class="container">
+      <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/TuBioinfostudio?ref_src=twsrc%5Etfw">Tweets by TuBioinfostudio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-8">
+          <a href="https://cb2.cst.temple.edu/">
+            <img class="img-fluid d-block mx-auto" src="img/logos/cb2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <a href="https://cst.temple.edu/">
+            <img class="img-fluid d-block mx-auto" src="img/logos/tu.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <a href="https://icms.cst.temple.edu/">
+            <img class="img-fluid d-block mx-auto" src="img/logos/icms.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-md-3 col-sm-6"></div>
+        <div class="col-md-3 col-sm-6">
+          <a href="http://igem.temple.edu/">
+            <img class="img-fluid d-block mx-auto" src="img/logos/igem.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="http://ccgg.temple.edu/">
+            <img class="img-fluid d-block mx-auto" src="img/logos/ccgg.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section class="page-section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Contact Us</h2>
+        <h3 class="section-subheading text-muted">We'll get back to you ASAP! </h3>
+      </div>
+    </div>
+    <form id="input" method="POST" action="https://formspree.io/tubioinfostudio@gmail.com">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="_replyto" placeholder="Your email">
+      <input type="hidden" name="_subject" value="TuBioinfostudio contact" />
+      <textarea name="body" placeholder="Your message"></textarea>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" value="Send">
+    </form>
+  </div>
+ </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; TU Bioinformatics Studio</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/TuBioinfostudio">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href = "https://github.com/tubioinfostudio">
+                <i class = "fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
 </html>
