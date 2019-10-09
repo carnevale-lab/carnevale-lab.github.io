@@ -151,7 +151,7 @@ img::-moz-selection {
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
+    border: solid;
     background-color: #212529;
   }
   #mainNav .navbar-brand {
@@ -269,7 +269,8 @@ header.masthead .intro-text .intro-heading .althead{
 }
 
 .topheader {
-  margin-top: 100px; 
+  margin-top: 150px;
+  margin-bottom: 25;
   align-items: center; 
   justify-content: center;
   align-items: center;
