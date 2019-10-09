@@ -272,7 +272,7 @@ header.masthead .intro-text .intro-heading .althead{
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 275px);
+  grid-template-columns: repeat(2, 200px);
   grid-template-rows: repeat(1, 350px);
   background-color: #212529;
 }
@@ -280,7 +280,7 @@ header.masthead .intro-text .intro-heading .althead{
 .lab {
   color: #b71c1c;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   display: table-cell;
   text-align: center;
   grid-row: 1 / 1;
@@ -290,7 +290,7 @@ header.masthead .intro-text .intro-heading .althead{
 .description {
   color: white;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 12px;
   display: table-cell;
   text-align: center;
   grid-row: 1 / 2;
