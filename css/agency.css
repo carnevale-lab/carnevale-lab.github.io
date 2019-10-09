@@ -269,34 +269,32 @@ header.masthead .intro-text .intro-heading .althead{
 }
 
 .topheader {
-  display: grid;
+  margin-top: 100px; 
+  align-items: center; 
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(1, 350px);
   background-color: #212529;
-}
+  width: 100%;
+  height: 100%
+  }
 
 .lab {
   color: #b71c1c;
   font-weight: 700;
-  font-size: 20px;
-  display: table-cell;
+  font-size: 40px;
   text-align: center;
-  grid-row: 1 / 1;
+  width: 100%;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .description {
   color: white;
   font-weight: 500;
-  font-size: 12px;
-  display: table-cell;
+  font-size:17px;
   text-align: center;
-  grid-row: 1 / 2;
+  margin-right: 25px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
 
 section#contact {
   background-color: #212529;
