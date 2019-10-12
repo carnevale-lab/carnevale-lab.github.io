@@ -108,6 +108,12 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 54, 54, 0.527)!important;
 }
 
+.navbar-logo{
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+}
+
 #mainNav {
   background-color: #212529;
 }
