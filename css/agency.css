@@ -173,6 +173,14 @@ img::-moz-selection {
   }
 }
 
+.dropdown-menu >a {
+  color: #212529
+  background-color: #b71c1c
+}
+ 
+.dropdown-menu > a:hover {
+    background-color: #b71c1c;
+}
 header.masthead {
   position: relative;
   width: 100%;
