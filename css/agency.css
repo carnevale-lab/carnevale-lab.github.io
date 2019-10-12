@@ -174,8 +174,8 @@ img::-moz-selection {
 }
 
 .dropdown-menu >a {
-  color: #212529
-  background-color: #b71c1c
+  color: #212529;
+  background-color: #b71c1c;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
  
