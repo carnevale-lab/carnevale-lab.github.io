@@ -38,8 +38,38 @@ h9 {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    bottom: 0;
+    background: #000;
+    opacity: 0.55;
+    transition: all 0.2s ease-out;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+ol.carousel-indicators {
+  width: 50%;
+  left: 10%;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: 80%;
+  height: 5%;
+  margin: 2%;
+  background: white;
+}
+
+
 .page-section {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 .page-section h2.section-heading {
