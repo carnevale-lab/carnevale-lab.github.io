@@ -68,7 +68,7 @@ h10 {
     width: 30%;
     height: 160px;
     bottom: 0;
-    background: #b71c1c;
+    background: #000000;
     opacity: 0.3;
     transition: all 0.2s ease-out;
 }
