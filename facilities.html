@@ -10,6 +10,9 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!-- Custom fonts for this template -->
   <script src="https://kit.fontawesome.com/e51c75a363.js" crossorigin="anonymous"></script>
@@ -49,13 +52,16 @@
       <div class="col-sm lab">
         Carnevale Lab   
       </div>
+     <!-- <div class="col-sm description">
+        Theoretical and Computational Research at the Interface of Physics, Biology, Chemistry, and Computer Science
+      </div> -->
     </div>
   </div>
 <body id="page-top">
 
- <!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-   	<div class="navbar-logo">
+    	<div class="navbar-logo">
         <a href="https://www.temple.edu"><img src="img/logos/custom_temple_logo.png" class="img-fluid"></a>
     </div>
     <div class="container">
@@ -107,73 +113,102 @@
     </div>
   </nav>
 
+  <!-- Facilities -->
+  <section class="page-section" id="facilities">
+    <div class="container">
+	  <div class="col-lg-12 text-center">
+	   <h2 class="section-heading text-uppercase">Facilities</h2>
+      </div>
+    </div>
+  </section>
 
-  <!-- Evolutionary Physics -->
-  <section class="page-section" id="topicheader">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h9 class="section-heading text-uppercase">Evolutionary Physics</h9>
-           	<img class="mx-auto" src="img/team/chunan.png" alt="" style="float: right">
-          <h8 class="section-subheading"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h8>
-        </div>
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    <li data-target="#carousel-example-2" data-slide-to="3"></li>
+    <li data-target="#carousel-example-2" data-slide-to="4"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <div class="mask2"></div>
+        <img class="d-block w-100" src="img/logos/SERC.jpg">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="color: white">SERC</h3>
+    	<p3>The Carnevale Lab is located on the 7th floor of a brand new, 
+	    state-of-the-art building on Temple University's Main Campus, the 
+	    <a href="https://cst.temple.edu/research/SERC">Science 
+	    Education and Research Center (SERC)</a>. Overall, SERC provides 250,000 sq. 
+	    ft. of space to education and interdisciplinary research, with extensive expertise 
+	    in genomics, bioinformatics, computer science, structural biology, and material 
+	    science present on site.</p3>
       </div>
     </div>
-  </section>
-  
+    <div class="carousel-item">
+      <div class="view">
+        <div class="mask2"></div>
+        <img class="d-block w-100" src="img/logos/open_spaces.jpg"
+          alt="Second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="color: white">Open Spaces</h3>
+        <p>SERC spaces are designed with largely open floor plans 
+	    to foster interdisciplinary interactions and cooperation.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <div class="mask2"></div>
+        <img class="d-block w-100" src="img/logos/office_view.jpg"
+          alt="3rd slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="color: white">Lab Spaces</h3>
+		<p>Our labs are located on the secured 7th floor of SERC. </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <div class="mask2"></div>
+        <img class="d-block w-100" src="img/logos/Compute.jpg"
+          alt="4th slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="color: white">High-Performance Computing</h3>
+        <p3>The Carnevale Lab relies on <a href="https://www.hpc.temple.edu/">Temple's High-Performance Computing (HPC)</a> resources
+        for molecular dynamics, machine learning, and data visualization. This includes 
+        Owl's Nest, a Linux cluster with 6,464 total CPU cores and over 1.5PB of parallel 
+        storage.</p3> 
+      </div>
+    </div>
+     <div class="carousel-item">
+      <div class="view">
+        <div class="mask2"></div>
+        <img class="d-block w-100" src="img/logos/owlsnest_racks.jpg"
+          alt="5th slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="color: white">Owl's Nest</h3>
+        <p3> Owl's Nest features 180x new dual-socket compute nodes with 28 
+        cores and 128GB of RAM each.  In addition, each 512GB box also hosts two NVIDIA 
+        P100 GPUs. An EDR InfiniBand (100Gb/s) fabric is used as interconnect. In November 
+        2018 the cluster was further extended with 48 more dual-socket compute nodes with 
+        16 cores and 96GB of RAM each. </p3>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
  
-  <!-- Topic 1 -->
-  <section class="page-section" id="topic1">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h7 class="section-heading text-uppercase">Topic 1</h7>
-           	<img class="mx-auto" src="img/team/chunan.png" alt="" style="float: right">
-          <h8 class="section-subheading"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h8>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Topic 2 -->
-  <section class="page-section" id="topic2">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h7 class="section-heading text-uppercase">Topic 2</h7>
-            <img class="mx-auto" src="img/team/chunan.png" alt="" style="float: right">
-          <h8 class="section-subheading"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h8>
-        </div>
-      </div>
-    </div>
-  </section>
-	
-  <!-- Topic 3 -->
-  <section class="page-section" id="topic3">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h7 class="section-heading text-uppercase">Topic 3</h7>
-            <img class="mx-auto" src="img/team/chunan.png" alt="" style="float: right">
-          <h8 class="section-subheading"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h8>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Topic 4 -->
-  <section class="page-section" id="topic4">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h7 class="section-heading text-uppercase">Topic 4</h7>
-            <img class="mx-auto" src="img/team/chunan.png" alt="" style="float: right">
-          <h8 class="section-subheading"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h8>
-        </div>
-      </div>
-    </div>
-  </section>
-     
+</div>
+<!--/.Carousel Wrapper-->
 
   <!-- Footer -->
   <footer class="footer">
@@ -217,7 +252,8 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/agency.js"></script>
+
 
 </body>
 
