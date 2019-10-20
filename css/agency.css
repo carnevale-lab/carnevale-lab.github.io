@@ -84,14 +84,12 @@ ol.carousel-indicators {
   width: 70%;
   left: 10%;
   height: 5%;
-  bottom: 0;
 }
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
   width: 90%;
   margin: 3%;
-  height: 5;
   background: white;
 
 }
