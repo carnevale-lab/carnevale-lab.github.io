@@ -40,6 +40,16 @@ a:hover {
   color: #b71c1c !important;
 }
 
+.img {
+    position: relative;
+    float: left;
+    width:  100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
 h1,
 h2,
 h3,
