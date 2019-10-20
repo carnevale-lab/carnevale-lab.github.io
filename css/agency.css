@@ -75,23 +75,6 @@ h9 {
     transition: all 0.2s ease-out;
 }
 
-.carousel {
-  position: relative;
-  width: 100%;
-}
-ol.carousel-indicators {
-  width: 70%;
-  bottom: 0px;
-  left: 50%;
-  right: 50%;
-}
-
-ol.carousel-indicators li,
-ol.carousel-indicators li.active {
-  width: 70%;
-  margin: 15px;
-  background: white;
-}
 
 .carousel-inner > .item {
     position: relative;
