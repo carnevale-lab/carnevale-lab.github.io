@@ -75,7 +75,9 @@ h10 {
     opacity: 0.6;
     transition: all 0.2s ease-out;
 }
-
+ .carousel {
+ height: 60%;  
+}
 .carousel-inner > .item {
     position: relative;
     display: none;
