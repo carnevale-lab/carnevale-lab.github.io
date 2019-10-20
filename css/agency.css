@@ -78,18 +78,18 @@ h9 {
 
 .carousel {
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 ol.carousel-indicators {
-  width: 80%;
-  bottom: 4px;
+  width: 70%;
+  bottom: 2px;
   left: 50%;
 }
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
-  width: 90%;
-  margin: 10px;
+  width: 70%;
+  margin: 15px;
   background: white;
 
 }
