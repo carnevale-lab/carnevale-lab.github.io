@@ -208,8 +208,7 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 54, 54, 0.527)!important;
 }
 
-.navbar-logo{
-    left: 0px;
+.navbar-left{
     width: 180px;
     height: 55px;
 }
