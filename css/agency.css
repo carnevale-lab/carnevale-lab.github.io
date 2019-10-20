@@ -21,11 +21,9 @@ p2 {
 }
 
 p3 {
-  line-height: 1;
-  font-size: 13px;
+  line-height: 0.5;
+  font-size: 11px;
   width: 100%;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: white;
 }
 
 a {
