@@ -82,7 +82,8 @@ h9 {
 ol.carousel-indicators {
   width: 70%;
   bottom: 0px;
-  left: 10%;
+  left: 50%;
+  right: 50%;
 }
 
 ol.carousel-indicators li,
