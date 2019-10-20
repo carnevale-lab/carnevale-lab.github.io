@@ -74,6 +74,10 @@ h10 {
     transition: all 0.2s ease-out;
 }
 
+.carousel {
+  display: flex;
+}
+
 .carousel-inner > .item {
     position: relative;
     display: none;
