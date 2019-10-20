@@ -21,7 +21,7 @@ p2 {
 
 p3 {
   line-height: 0.5;
-  font-size: 12px;
+  font-size: 14px;
   font-size: 1vmin;
 }
 
@@ -107,8 +107,8 @@ h10 {
 }
 
 .page-section h3.section-subheading {
-  font-size: 40px;
-  font-size: 8vmin;
+  font-size: 30px;
+  font-size: 5vmin;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: red;
   font-weight: 300;
