@@ -65,11 +65,11 @@ h10 {
 
 .mask {
     position: absolute;
-    width: 100%;
+    width: 30%;
     height: 160px;
     bottom: 0;
     background: #b71c1c;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: all 0.2s ease-out;
 }
 
