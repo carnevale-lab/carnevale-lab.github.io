@@ -82,13 +82,13 @@ h9 {
 }
 ol.carousel-indicators {
   width: 100%;
-  bottom: 10px;
+  bottom: 4px;
   left: 50%;
 }
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
-  width: 100%;
+  width: 90%;
   margin: 10px;
   background: white;
 
