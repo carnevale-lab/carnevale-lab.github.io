@@ -76,6 +76,7 @@ h10 {
     transition: all 0.2s ease-out;
 }
  .carousel {
+ width: 80%;
  height: 60%;  
 }
 .carousel-inner > .item {
