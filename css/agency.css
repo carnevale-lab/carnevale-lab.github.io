@@ -38,7 +38,7 @@ p4 {
 p5 {
   line-height: 1.5;
   font-weight: 250;
-  font-size: 1vmax;
+  font-size: 1vmin;
   text-align: left;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
