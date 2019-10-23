@@ -133,7 +133,7 @@ h10 {
 
 .page-section h7.section-heading {
   text-align: center;
-  font-size: 35px;
+  font-size: 5vmax;
   margin-top: 0;
   margin-bottom: 15px;
   color: #b71c1c;
@@ -150,7 +150,7 @@ h10 {
 
 .page-section h9.section-heading {
   text-align: left;
-  font-size: 50px;
+  font-size: 8vmax;
   margin-top: 0;
   margin-bottom: 15px;
   color: #212529;
