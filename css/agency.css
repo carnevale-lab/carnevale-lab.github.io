@@ -113,7 +113,7 @@ h10 {
     height: 100%;
     bottom: 0;
     background: #212529;
-    opacity: 0.5;
+    opacity: 0.25;
     transition: all 0.2s ease-out;
 }
 
