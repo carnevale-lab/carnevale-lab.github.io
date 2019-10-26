@@ -44,6 +44,7 @@ p4 {
 }
 
 p5 {
+  text-align: justify;
   line-height: 1.5;
   font-weight: 250;
   font-size: 3vmin;
