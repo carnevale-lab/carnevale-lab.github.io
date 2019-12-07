@@ -161,37 +161,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h7 class="section-heading text-uppercase" style="text-align: center;">FUNCTIONAL MECHANICS OF ION CHANNELS FROM THE 6-TM 
-		  FAMILY<br></h7>
+          <h7 class="section-heading text-uppercase" style="text-align: center;">Variational and Deterministic Autoencoding of Protein MSAs<br></h7>
             <img class="img-fluid" src="img/research4.png" alt="" style="max-width:100%; max-height:100%;">
           <p style="text-align: justify !important; line-height: 1.5; font-weight: 250; font-size: 3vmin;"> <br>
-		One of the most interesting case studies to investigate the connections between sequence, structural dynamics and 
-		function is the six-transmembrane-helix (6-TM) family of ion channels. Ion channels are ubiquitous proteins--one of 
-		Nature's exquisite nano-scale molecular machines--that reside in membranes of excitable cells. Their role is to convert 
-		chemical and electrical stimuli into ionic currents. Conformational changes in the part of the protein responsible for 
-		sensing a stimulus (transducer domain) trigger the gate (effector domain), which can open and close, thereby 
-		controlling the flux of ions across the cell membrane. Details of this so-called allosteric communication are of broad 
-		relevance to physiology: several drug molecules target ion channels, including neurotoxins and anesthetics, and work by 
-		interfering with the coupling between the transducer and effector domains. The 6-TM family, in particular, is 
-		characterized by a common structural template inherited from a single ancestor gene that gave rise, through 
-		differentiation, to a myriad of functions, from reporting noxious environmental conditions, to shaping the neuronal 
-		action potential, to syncing the beating of the heart.
+		The dimensionality of protein sequence MSAs is of interest to our group. Here, we explore the extent to which MSAs can be 
+		"reduced" with autoencoders, both variational (VAE) and deterministic (DAE).
 		<br>
-		Voltage gated ion channels (VGICs), the proteins responsible for the propagation of electrical signal in neuronal axons,
-		belong to the 6-TM family. Despite the fact that these channels have been investigated for several decades, their 
-		function relies on molecular mechanisms that are partially unknown. In this context, our interests are focused on the 
-		energetics of the activation process of these channels and on the nature of the mechanical coupling between the voltage 
-		sensor domain and the pore domain. Besides the voltage 
-		gated ion channels, the 6-TM family comprises other physiologically relevant channels, like, for instance, the transient receptor potential (TRP) channels. TRPs play a central role in transducing diverse sensory stimuli in eukaryotes. All known TRP channels act as polymodal cellular sensors and form tetrameric assemblies similar to voltage-gated ion channels.
+		Preliminary results of our VAE demonstrate crude phylogenetic separation of kinase sequences by super kingdom, 
+		comparable to PCA of the same.  
 		<br>
-		The fact that TRPs and VGICs are structurally similar, yet functionally distinct raises immediately a question: Is the 
-		molecular mechanism underlying polymodal gating in TRP channels different from that underpinning voltage sensitivity 
-		in voltage gated ion channels? Intriguingly, comparative sequence analysis on large, comprehensive ensembles of TRP 
-		and VGIC channel sequences highlights sequence features that are specific to TRP channels and suggests a model of TRP 
-		channel gating that differs substantially from the one mediating voltage sensitivity in VGICs. Most of our recent 
-		research efforts are directed toward understanding, via molecular dynamics simulations, the molecular details of this 
-		activation mechanism, characterizing the equilibrium and kinetic properties of this transition and, most importantly, 
-		shedding light on the role on activation of factors like lipid composition, temperature and pH.<br>
+		Results of our more recent (but still untuned) VAE demonstrate reproduction of kinase MSA marginals, both univariate and bivariate,
+		with a Pearson R of 0.883 and 0.781 respectively. 
+		<br>
+		<Hamming distance distributions>
 	  </p>
 	  <p style="text-align: justify !important; line-height: 1.5; font-weight: 250; font-size: 3vmin; font-style: italic">
 	      <br>E. Palovcak, L. Delemotte, M. Klein, and V. Carnevale. Comparative sequence analysis suggests a conserved gating 
