@@ -8,6 +8,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+    <!--Jquery used to link the navBar to all other pages  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -42,9 +45,21 @@
     background-color: #dddddd;
   }
   </style>
-</head>
 
-  <div class="topheader">
+<!-- Navbar Script, using Jquery to load from nav.html -->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>    
+    
+</head>
+    
+<div class="topheader">
     <div class="row">
       <div class="col-sm lab">
         Carnevale Lab   
@@ -53,63 +68,9 @@
         Theoretical and Computational Physics at the Interface with Biology, Chemistry, and Computer Science
       </div>
     </div>
-  </div>
-<body id="page-top">
+  </div>    
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="navbar-logo">
-      <a href="https://www.temple.edu"><img src="img/logos/custom_temple_logo.png" class="img-fluid"></a>
-    </div>
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item dropdown"">
-            <a class="nav-link dropdown-toggle" href="#" " id="navbarDropdown" role="button" data-toggle="dropdown" haspopup="true" expanded="false">
-              Research</a>
-            <div class="dropdown-menu" labelledby="navbarDropdown">
-  	      <!-- <a class="dropdown-item" href="research.html">Research Overview</a>   
-  	        <div class="dropdown-divider"></div>    -->       
-          	  <a class="dropdown-item" href="ionmem.html">Ion Channels & Membranes</a>
-          	  <a class="dropdown-item" href="softmatter.html">Soft Matter & Statistical Physics</a>
-          	  <a class="dropdown-item" href="molecevol.html">Molecular Evolution & Machine Learning</a>
-          	  <a class="dropdown-item" href="physchem.html">Physical Chemistry & Molecular Simulations</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#fund">Funding</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#collaborators">Collaborators</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#contactinfo">Contact</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="facilities.html">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="toolsmethods.html">Tools & Methods</a>
-          </li>
-	   <!--/ Tutorials
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="tutorials.html">Tutorials</a>
-          </li>-->
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 
 <!--Carousel Wrapper-->
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -435,123 +396,8 @@
       </div> 
     </div>
     
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Former Members</h2>
-        <h3 class="section-subheading text-muted"></h3>
-      </div>
-    </div>
     
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/daniele_granata.jpeg" alt="">
-          	<h4>Daniele Granata</h4>
-          	<p class="text-muted">Postdoctoral Researcher</p>
-        	<p class="text-muted" style="font-style: italic;">Currently: Senior Modelling Scientist, Novo Nordisk</p>
-          	<ul class="list-inline social-buttons">
-            	<li class="list-inline-item">
-              		<a href="https://dk.linkedin.com/in/daniele-granata-783b8b174">
-                		<i class="fab fa-linkedin-in"></i>
-              		</a>
-            	</li>
-            	<li class="list-inline-item">
-              		<a href="https://scholar.google.it/citations?user=9HwznCgAAAAJ&hl=en">
-                		<i class="ai ai-google-scholar ai-lg"></i>
-           	    	</a>
-            	</li>
-          	</ul>
-    	</div>
-	</div>
-	
-    <div class="col-sm-3">
-    	<div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/marina_kasimova.jpeg" alt="">
-          <h4>Marina Kasimova</h4>
-          <p class="text-muted">Postdoctoral Researcher</p>
-        <p class="text-muted" style="font-style: italic;">Currently: Postdoctoral Researcher, Novo Nordisk</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://dk.linkedin.com/in/marina-kasimova-714a2793">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://scholar.google.fr/citations?user=xG4R0X0AAAAJ&hl=fr">
-                <i class="ai ai-google-scholar ai-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-   
-       <div class="col-sm-3">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/q_rev.png" alt="">
-          <h4>Quentin Novinger</h4>
-          <p class="text-muted">Undergraduate Student, Mathematics & Computer Science</p>
-        <p class="text-muted" style="font-style: italic;">Currently: AI Software Engineer, Lockheed Martin</p>
-
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://github.com/regnivon">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-              	<div class="col-sm-3">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/eugene_palovcak.jpeg" alt="">
-          <h4>Eugene Palovcak</h4>
-            <p class="text-muted">Undergraduate Student, Biochemistry</p>
-          <p class="text-muted" style="font-style: italic;">Currently: AI Scientist, Invitae</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/eugene-palovcak-1878ab17b">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://scholar.google.com/citations?user=S9ayfkEAAAAJ&hl=en">
-                <i class="ai ai-google-scholar ai-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      
-      <div class="col-sm-3">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/LeiQian.jpg" alt="">
-          <h4>Lei Qian</h4>
-          <p class="text-muted">Master Student, Bioinformatics</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://github.com/leiqian-temple">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-          <div class="col-sm-3">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/yx_rev.png" alt="">
-          <h4>Yiming Xu</h4>
-          <p class="text-muted">Undergraduate, Physics</p>
-          <p class="text-muted" style="font-style: italic;">Currently: PhD Student, Physics, Syracuse University</p>
-
-          </ul>
-        </div>
-      </div>
-     
-  </section>
-
+    </section>
 
 <!-- Twitter -->
 
@@ -833,7 +679,7 @@
   </section> -->
 		      
   <!-- Contact  -->
-    <section class="page-section" id="contactinfo">
+<!--    <section class="page-section" id="contactinfo">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -865,7 +711,9 @@
       </div>
     </section>
 
-  <!-- Footer -->
+-->
+
+  <!-- Footer 
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
@@ -889,6 +737,21 @@
 
  
   </div>
+
+-->
+
+<footer>
+    <div id="footer-placeholder">
+
+    </div>
+
+<script>
+$(function(){
+  $("#footer-placeholder").load("foot.html");
+});
+</script>
+
+</footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

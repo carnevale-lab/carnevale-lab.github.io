@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+    
+    <!--Jquery used to link the navBar to all other pages  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,76 +43,20 @@
     background-color: #dddddd;
   </style>
 
+<!-- Navbar Script, using Jquery to load from nav.html -->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>    
+    
   
 </head>
-
-
-  <div class="topheader">
-    <div class="row">
-      <div class="col-sm lab">
-        <!-- Carnevale Lab  --> 
-      </div>
-    </div>
-  </div>
-<body id="page-top">
-
- <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="navbar-logo">
-      <a href="https://www.temple.edu"><img src="img/logos/custom_temple_logo.png" class="img-fluid"></a>
-    </div>
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown"">
-            <a class="nav-link dropdown-toggle" href="#" " id="navbarDropdown" role="button" data-toggle="dropdown" haspopup="true" expanded="false">
-              Research</a>
-            <div class="dropdown-menu" labelledby="navbarDropdown">
-		    <!--
-  	      <a class="dropdown-item" href="research.html">Research Overview</a>   
-  	        <div class="dropdown-divider"></div>          --> 
-          	  <a class="dropdown-item" href="ionmem.html">Ion Channels & Membranes</a>
-          	  <a class="dropdown-item" href="softmatter.html">Soft Matter & Statistical Physics</a>
-          	  <a class="dropdown-item" href="molecevol.html">Molecular Evolution & Machine Learning</a>
-          	  <a class="dropdown-item" href="physchem.html">Physical Chemistry & Molecular Simulations</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#fund">Funding</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#collaborators">Collaborators</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="facilities.html">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="toolsmethods.html">Tools & Methods</a>
-          </li>
-	  <!--
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="tutorials.html">Tutorials</a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 
  <!-- Molecular Evolution & Machine Learning -->
   <section class="page-section" id="topicheader">
@@ -117,7 +64,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h9 class="section-heading text-uppercase"><br>Molecular Evolution & Machine Learning</h9>
-          <p style="text-align: justify !important; line-height: 1.5; font-weight: 250; font-size: 3vmin;"><br>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+          <p style="text-align: justify !important; line-height: 1.5; font-weight: 250; font-size: 3vmin;"><br><!-- can add forward text here --> </p>
         </div>
       </div>
     </div>

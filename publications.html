@@ -870,6 +870,9 @@ ul
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+    
+    <!--Jquery used to link the navBar to all other pages  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -923,6 +926,17 @@ ul
     td.td6 {width: 373.0px; padding: 0.0px 7.2px 0.0px 7.2px;}
   </style>
 
+    
+<!-- Navbar Script, using Jquery to load from nav.html -->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>    
   
 </head>
 
@@ -937,64 +951,7 @@ ul
 
 
 <body id="page-top" lang=EN-US style='tab-interval:.5in'>
-
- <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="navbar-logo">
-      <a href="https://www.temple.edu"><img src="img/logos/custom_temple_logo.png" class="img-fluid"></a>
-    </div>
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown"">
-            <a class="nav-link dropdown-toggle" href="#" " id="navbarDropdown" role="button" data-toggle="dropdown" haspopup="true" expanded="false">
-              Research</a>
-            <div class="dropdown-menu" labelledby="navbarDropdown">
-		    <!--
-  	      <a class="dropdown-item" href="research.html">Research Overview</a>   
-  	        <div class="dropdown-divider"></div>          --> 
-          	  <a class="dropdown-item" href="evophys.html">Molecular Evolution</a>
-          	  <a class="dropdown-item" href="bioinfds.html">Data Science</a>
-          	  <a class="dropdown-item" href="biophyschem.html">Biophysical Chemistry</a>
-          	  <a class="dropdown-item" href="statphys.html">Statistical Physics</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#fund">Funding</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#collaborators">Collaborators</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="facilities.html">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="toolsmethods.html">Tools & Methods</a>
-          </li>
-	  <!--
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="tutorials.html">Tutorials</a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 
  <!-- Publications Title -->
   <section class="page-section" id="publications_title">
@@ -1033,52 +990,6 @@ ul
     <tr>
       <td colspan="2" valign="top" class="td2">
         <p class="p3"><span class="s2"><b> </b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p4"><span class="s2"><b>85. </b>V. Carnevale, L. Delemotte, R. J. Howard </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p4"><span class="s2">Molecular Dynamics Simulations of Ion Channels. </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td5">
-        <p class="p5"><span class="s2"><b><i>Trends in Biochemical Sciences<span class="Apple-converted-space"> </span></i></b></span></p>
-      </td>
-      <td valign="top" class="td6">
-        <p class="p6"><span class="s1"><a href="https://doi.org/10.1016/j.tibs.2021.04.005">10.1016/j.tibs.2021.04.005<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p7"><span class="s2"> </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p4"><span class="s2"><b>84. </b>R. Wang, M. L. Klein, <b>V. Carnevale@</b>, E. Borguet@ <b>corresponding author</b> </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p4"><span class="s2">Investigations of Water/Oxide Interfaces by Molecular Dynamics Simulations. </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td5">
-        <p class="p5"><span class="s2"><b><i>Wiley Interdisciplinary Reviews: Computational Molecular Science<span class="Apple-converted-space"> </span></i></b></span></p>
-      </td>
-      <td valign="top" class="td6">
-        <p class="p6"><span class="s1"><a href="https://doi.org/10.1002/wcms.1537">10.1002/wcms.1537<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top" class="td2">
-        <p class="p7"><span class="s2"> </span></p>
       </td>
     </tr>
     <tr>
